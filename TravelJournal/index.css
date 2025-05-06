@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: ghostwhite;
+}
+.header{
+    display: flex;
+    height: 80px;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #a53232;
+    color: white;
+    align-items: center;
+}
+.globe{
+    width: 24px;
+    margin-right: 10px;
+}
+.journal-entry{
+    display: flex;
+    margin-top: 34px;
+    margin-left: 25px;
+    padding: 15px 20px;
+    width: 550px;
+    border: #b66565 2px solid;
+    border-radius: 25px;
+    transition-duration: 0.6s;
+    overflow: hidden;
+}
+.journal-entry p{
+    transition: transform 0.3s ease, color 0.3s ease, opacity 0.3s ease;;
+}
+.journal-entry:hover{
+    padding: 20px 25px;
+    border: #804747 2px solid;
+    box-shadow: 20px 20px 20px #804746;
+    width: 650px;
+}
+.journal-entry p:hover{
+    transform : translateX(10px);
+}
+.journal-entry img{
+    transition: transform 0.4s ease-in-out;
+}
+.journal-entry img:hover{
+    transform: scale(1.15);
+}
+.main-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-info-container .marker{
+    width: 25px;
+    margin-right: 4px;
+}
+.main-image-container{
+    width: 125px;
+    height: 220px;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: 19px;
+    border-radius: 10px;
+}
+.map-container{
+    position: relative;
+    display: inline-block;
+}
+.map-container a {
+    margin-left: 12px;
+    font-size: 0.9rem;
+    color: #655d5d;
+    text-decoration: none;
+}
+.map-container span{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-right: 12px;
+}
+.map-container .entry-title{
+    line-height: 1.5;
+    font-size: 1.8rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.map-container .trip-dates{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.map-wrapper{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 20px;
+    opacity: 0;
+    width: 150px;
+    height: 150px;
+    transition: opacity 0.3s ease;
+}
+.map-wrapper iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.map-container:hover .map-wrapper{
+    opacity: 1;
+}
+.more-info-btn {
+    display: flex;
+    border-radius: 10px;
+    align-items: right;
+    background-color: #a53232;
+    width: 100px;
+    color: white;
+    padding: 2px;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+.more-info-btn:hover{
+    box-shadow: 2px 2px 2px #a53232;
+}
+
